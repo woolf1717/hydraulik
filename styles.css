@@ -45,7 +45,7 @@ button { font: inherit; }
 
 .hero { position: relative; min-height: 650px; isolation: isolate; background: var(--navy); color: var(--white); overflow: hidden; }
 .hero-photo { position: absolute; inset: 0; z-index: -2; background: url('/assets/plumeratwork.jpg') top
- / cover no-repeat; max-width: 1400px; margin: 0 auto; }
+ / cover no-repeat; max-width: 1600px; margin: 0 auto; }
 .hero-overlay { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(4,15,45,.98) 0%, rgba(5,18,49,.93) 35%, rgba(6,20,55,.57) 58%, rgba(6,20,55,.17) 100%), linear-gradient(0deg, rgba(3,13,39,.52), transparent 40%); }
 .hero-content { min-height: 590px; display: flex; justify-content: space-between; align-items: center; gap: 44px; padding: 70px 0 82px; }
 .hero-copy { width: min(650px, 64%); }
