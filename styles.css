@@ -98,8 +98,11 @@ h2 em { color: var(--coral); font-style: normal; }
 .emergency-card:hover { transform: translateY(-6px); box-shadow: 0 20px 42px rgba(16,38,78,.1); }
 .emergency-card.active { border-color: transparent; background: var(--navy); color: var(--white); }
 .card-number { position: absolute; top: 21px; right: 24px; color: #9ba8ba; font-family: var(--manrope); font-size: 11px; font-weight: 800; }
+.card-photo { height: 103px; margin: -27px -27px 22px; overflow: hidden; background: var(--mist); }
+.card-photo img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.82) contrast(1.02); transition: transform .35s; }
+.emergency-card:hover .card-photo img { transform: scale(1.04); }
 .active .card-number { color: #e99893; }
-.card-icon { display: grid; place-items: center; width: 56px; height: 56px; margin: 18px 0 54px; border-radius: 50%; background: var(--mist); color: var(--coral); }
+.card-icon { display: grid; place-items: center; width: 56px; height: 56px; margin: 0 0 28px; border-radius: 50%; background: var(--mist); color: var(--coral); }
 .active .card-icon { background: rgba(255,255,255,.12); color: #ff8f86; }
 .leak-icon span { width: 18px; height: 25px; border: 3px solid currentColor; border-radius: 70% 70% 80% 80%; transform: rotate(45deg); }
 .pipe-icon span { width: 31px; height: 20px; border: 4px solid currentColor; border-bottom: 0; border-radius: 15px 15px 0 0; }
@@ -227,7 +230,8 @@ details p { max-width: 560px; margin: -7px 30px 22px 0; color: #63738b; font-siz
   .section-intro { margin: 0; font-size: 14px; }
   .emergency-cards { grid-template-columns: 1fr; }
   .emergency-card { min-height: 270px; }
-  .card-icon { margin-bottom: 33px; }
+  .card-photo { height: 112px; }
+  .card-icon { margin-bottom: 26px; }
   .callout-inner { grid-template-columns: 1fr; gap: 17px; padding: 50px 0; }
   .callout-inner .btn { grid-column: auto; margin-top: 6px; }
   .callout-mark { width: 56px; height: 56px; font-size: 40px; }
