@@ -44,7 +44,8 @@ button { font: inherit; }
 .menu-toggle span { display: block; width: 25px; height: 2px; margin: 5px 0; background: var(--navy); transition: .2s; }
 
 .hero { position: relative; min-height: 650px; isolation: isolate; background: var(--navy); color: var(--white); overflow: hidden; }
-.hero-photo { position: absolute; inset: 0; z-index: -2; background: url('/assets/hero-fallback.svg') center / cover no-repeat; }
+.hero-photo { position: absolute; inset: 0; z-index: -2; background: url('/assets/plumeratwork.jpg') top
+ / cover no-repeat; max-width: 1400px; margin: 0 auto; }
 .hero-overlay { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(4,15,45,.98) 0%, rgba(5,18,49,.93) 35%, rgba(6,20,55,.57) 58%, rgba(6,20,55,.17) 100%), linear-gradient(0deg, rgba(3,13,39,.52), transparent 40%); }
 .hero-content { min-height: 590px; display: flex; justify-content: space-between; align-items: center; gap: 44px; padding: 70px 0 82px; }
 .hero-copy { width: min(650px, 64%); }
@@ -94,7 +95,7 @@ h2 { margin-bottom: 0; color: var(--navy); font-size: clamp(38px, 4.3vw, 62px); 
 h2 em { color: var(--coral); font-style: normal; }
 .section-intro { max-width: 460px; margin: 0 0 7px auto; color: var(--text); font-size: 15px; line-height: 1.75; }
 .emergency-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.emergency-card { position: relative; min-height: 330px; padding: 27px; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--white); transition: transform .25s, box-shadow .25s, background .25s; }
+.emergency-card { position: relative; min-height: 230px; padding: 27px; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--white); transition: transform .25s, box-shadow .25s, background .25s; }
 .emergency-card:hover { transform: translateY(-6px); box-shadow: 0 20px 42px rgba(16,38,78,.1); }
 .emergency-card.active { border-color: transparent; background: var(--navy); color: var(--white); }
 .card-number { position: absolute; top: 21px; right: 24px; color: #9ba8ba; font-family: var(--manrope); font-size: 11px; font-weight: 800; }
